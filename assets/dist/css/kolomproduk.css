@@ -1,0 +1,97 @@
+
+/* ---------------- KOLOM 3 BARIS ----------------*/
+.col-list-3 {
+  float: left;
+  padding: 0 10px;
+  width: 33%;
+}
+.col-list-3:nth-child(3n) {
+	clear:right;
+}
+.col-list-3:nth-child(3n+1) {
+	clear:left;
+}
+
+/* ---------------- KOLOM 4 BARIS ----------------*/
+.col-list-4 {
+  float: left;
+  padding: 0 10px;
+  width: 25%;
+}
+.col-list-4:nth-child(4n) {
+  clear:right;
+}
+.col-list-4:nth-child(4n+1) {
+  clear:left;
+}
+
+
+.recent-car-list {
+  background: transparent;
+  margin-top: 20px;
+}
+.car-info-box { position:relative;}
+.car-info-box ul {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: absolute;
+  width: 100%;
+}
+.car-info-box li {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 50px;
+  list-style: outside none none;
+  margin: 0 15px 0 auto;
+}
+.car-info-box li .fa {
+  margin-right: 8px;
+}
+.car-info-box li:nth-last-child(1) {
+  margin-right: 0;
+}
+.car-title-m {
+  overflow: hidden;
+  padding: 20px;
+}
+.car-title-m h6 {
+  float: left;
+  margin: 0 auto;
+  max-width: 245px;
+}
+.car-title-m h6 a {
+  color: #111111;
+}
+.car-title-m .price {
+  color: #555555;
+  float: right;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* ---------------- CARD PRODUK STYLE ----------------*/
+#myProduct{
+  transition: .2s;
+  position: relative;
+}
+#myProduct:hover{
+  box-shadow: 0 0 30px 5px #ededed;
+  transform: scale(1.02);
+}
+#myProduct:hover .middle {
+  opacity: 1;
+  top: 50%;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
